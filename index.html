@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+       <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+		<div class="task-list" id="pending">
+		  <h3>Pending</h3>
+		  
+		</div>
+		 
+		<div class="task-list" id="inProgress">
+		  <h3>In Progress</h3>
+		</div>
+		 
+		<div class="task-list" id="completed">
+		  <h3>Completed</h3>
+		</div>
+		 
+		<div class="task-list">
+		  <h3>Add a task</h3>
+		  <form id="todo-form">
+		    <input type="text" placeholder="Title" />
+		    <textarea placeholder="Descrtipion"></textarea>
+		    <input type="text" placeholder="Due Date (dd/mm/yyyy)" name="date" id="date"/>
+		    <input type="button" class="btn btn-primary" value="Add Task" id = "add-task"/>
+		  </form>
+		 
+		  <input type="button" class="btn btn-primary" value="Clear Data" />
+		 
+		  <div id="delete-div">Drag Here to Delete</div>
+		</div>
+
+
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jquery-ui.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="todo.js"></script>
+    </body>
+</html>
